@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Font Preview</title>
     <link rel="stylesheet" href="static/css/semantic.min.css">
+    <link rel="stylesheet" href="static/css/fonts.css">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 
@@ -20,32 +21,68 @@
         <a class="item">Sign-in</a>
     </nav>
     <main class="main-content">
-        <div class="ui grid container">
-            <div class="eight wide column">
-                <div class="ui icon fluid input">
-                    <input type="text" placeholder="Ingresa un texto de prueba.." id="input">
-                    <i class="pencil alternate icon"></i>
-                </div>
-            </div>
-            <div class="eight wide column">
-                <div class="ui fluid search selection dropdown">
-                    <input type="hidden" name="country">
-                    <i class="dropdown icon"></i>
-                    <div class="default text">Select Country</div>
-                    <div class="menu">
-                        <div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
-                        <div class="item" data-value="ax"><i class="ax flag"></i>Aland Islands</div>
-                        <div class="item" data-value="al"><i class="al flag"></i>Albania</div>
-                        <div class="item" data-value="dz"><i class="dz flag"></i>Algeria</div>
-                        <div class="item" data-value="as"><i class="as flag"></i>American Samoa</div>
+        <div class="ui container">
+            <div class="ui stackable three column grid">
+                <div class="column">
+                    <div class="ui icon fluid input">
+                        <input type="text" placeholder="Ingresa un texto de prueba.." id="input">
+                        <i class="pencil alternate icon"></i>
                     </div>
                 </div>
+                <div class="column">
+                    <div class="ui fluid floating labeled icon dropdown button">
+                        <i class="font icon"></i>
+                        <span class="text">Tamaño de fuente (px)</span>
+                        <div class="menu">
+                            <div class="item item-menu-font-size" data-value="35">35 px</div>
+                            <div class="item item-menu-font-size" data-value="50">50 px</div>
+                            <div class="item item-menu-font-size" data-value="70">70 px</div>
+                            <div class="item item-menu-font-size" data-value="100">100 px</div>
+                            <div class="item item-menu-font-size" data-value="120">120 px</div>
+                            <div class="item item-menu-font-size" data-value="150">150 px</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="column">
+                    <div class="ui fluid search selection dropdown">
+                        <input type="hidden" name="country">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Select Country</div>
+                        <div class="menu">
+                            <div class="item" data-value="af">Afghanistan</div>
+                            <div class="item" data-value="ax"><i class="ax flag"></i>Aland Islands</div>
+                            <div class="item" data-value="al"><i class="al flag"></i>Albania</div>
+                            <div class="item" data-value="dz"><i class="dz flag"></i>Algeria</div>
+                            <div class="item" data-value="as"><i class="as flag"></i>American Samoa</div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
-            <div class="eight wide column">
-                <p>Column</p>
-            </div>
-            <div class="eight wide column">
-                <p>Column</p>
+            <div class="ui stackable two column grid">
+                <div class="column">
+                    <div class="ui fluid card">
+                        <div class="content">
+                            <div class="header">Sacramento</div>
+                        </div>
+                        <div class="content">
+                            <div class="ui small feed">
+                                <p class="preview-text font-sacramento">Sacramento</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui fluid card">
+                        <div class="content">
+                            <div class="header">Sacramento</div>
+                        </div>
+                        <div class="content">
+                            <div class="ui small feed">
+                                <p class="preview-text font-tangerine">Tangerine</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
